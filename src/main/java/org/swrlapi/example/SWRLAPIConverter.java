@@ -20,12 +20,16 @@ import java.util.ArrayList;
  * Extract information from OWL/RDF file and then convert to AIML
  */
 
-public class SWRLAPIExample {
+public class SWRLAPIConverter {
+
+    public static String WHAT_ARE_THE_TREATMENTS = "What are the treatments?";
+
     public static void main(String[] args) {
 
         try {
             // Create an OWL ontology using the OWLAPI
             OWLOntologyManager ontologyManager = OWLManager.createOWLOntologyManager();
+            //Use your own RDF/OWL file
             OWLOntology ontology = ontologyManager.loadOntologyFromOntologyDocument(new File("src/main/resources/coronavirus.rdf"));
 
             // Create SQWRL query engine using the SWRLAPI
@@ -38,17 +42,18 @@ public class SWRLAPIExample {
             // SQWRLResult detailsResult = queryEngine.runSQWRLQuery("Q3", "coronavirus:Details(?p) ^ coronavirus:of(?p, ?c) ^ coronavirus:details(?p, ?g) -> sqwrl:select(?g)");
             // SQWRLResult methodResult = queryEngine.runSQWRLQuery("Q3", "coronavirus:Method(?p) ^ coronavirus:of_spreading(?p, ?c) ^ coronavirus:details(?p, ?g) -> sqwrl:select(?g)");
 
-            ArrayList<String> symptoms = new ArrayList<>();
+            ArrayList<String> treatments = new ArrayList<>();
             // Process the SQWRL result
             while (treatmentResult.next()) {
-                symptoms.add(treatmentResult.getValue("g").asLiteralResult().getOWLLiteral().getLiteral());
+                treatments.add(treatmentResult.getValue("g").asLiteralResult().getOWLLiteral().getLiteral());
             }
 
             AIMLPattern aimlPattern = new AIMLPattern();
-            aimlPattern.setPattern("what are the symptoms");
-            aimlPattern.setAttributes(symptoms);
-            AIMLParser.generateAIML(aimlPattern);
+            aimlPattern.setPattern(WHAT_ARE_THE_TREATMENTS);
+            aimlPattern.setAttributes(treatments);
 
+            // Create the AIML
+            AIMLParser.generateAIML(aimlPattern);
 
         } catch (OWLOntologyCreationException e) {
             System.err.println("Error creating OWL ontology: " + e.getMessage());

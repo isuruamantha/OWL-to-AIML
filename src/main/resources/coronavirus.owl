@@ -1,0 +1,494 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://coronavirus.rdf"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://coronavirus.rdf">
+    <Prefix name="" IRI="http://coronavirus.rdf#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="coronavirus" IRI="http://coronavirus.rdf#"/>
+    <Declaration>
+        <Class IRI="#Details"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Precautions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptoms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Treatments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Virus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#available_for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#of_spreading"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#shows_by"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#behaviour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#details"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#treatment_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detail1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detail2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detail3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detail4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Method1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Method2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Method3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Method4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Precaution1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Precaution2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Precaution3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Precaution4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Symptom1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Symptom2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Symptom3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Symptom4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Symptom5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Treatment1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Treatment2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Treatment3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Virus"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Details"/>
+        <NamedIndividual IRI="#Detail1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Details"/>
+        <NamedIndividual IRI="#Detail2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Details"/>
+        <NamedIndividual IRI="#Detail3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Details"/>
+        <NamedIndividual IRI="#Detail4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Method"/>
+        <NamedIndividual IRI="#Method1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Method"/>
+        <NamedIndividual IRI="#Method2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Method"/>
+        <NamedIndividual IRI="#Method3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Method"/>
+        <NamedIndividual IRI="#Method4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Precautions"/>
+        <NamedIndividual IRI="#Precaution1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Precautions"/>
+        <NamedIndividual IRI="#Precaution2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Precautions"/>
+        <NamedIndividual IRI="#Precaution3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Precautions"/>
+        <NamedIndividual IRI="#Precaution4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Symptom1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Symptom2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Symptom3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Symptom4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Symptom5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Treatments"/>
+        <NamedIndividual IRI="#Treatment1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Treatments"/>
+        <NamedIndividual IRI="#Treatment2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Treatments"/>
+        <NamedIndividual IRI="#Treatment3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Virus"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#of"/>
+        <NamedIndividual IRI="#Detail1"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#of"/>
+        <NamedIndividual IRI="#Detail2"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#of"/>
+        <NamedIndividual IRI="#Detail3"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#of"/>
+        <NamedIndividual IRI="#Detail4"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#of_spreading"/>
+        <NamedIndividual IRI="#Method1"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#of_spreading"/>
+        <NamedIndividual IRI="#Method2"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#of_spreading"/>
+        <NamedIndividual IRI="#Method3"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#of_spreading"/>
+        <NamedIndividual IRI="#Method4"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#for"/>
+        <NamedIndividual IRI="#Precaution1"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#for"/>
+        <NamedIndividual IRI="#Precaution2"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#for"/>
+        <NamedIndividual IRI="#Precaution3"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#for"/>
+        <NamedIndividual IRI="#Precaution4"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shows_by"/>
+        <NamedIndividual IRI="#Symptom1"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shows_by"/>
+        <NamedIndividual IRI="#Symptom2"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shows_by"/>
+        <NamedIndividual IRI="#Symptom3"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shows_by"/>
+        <NamedIndividual IRI="#Symptom4"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shows_by"/>
+        <NamedIndividual IRI="#Symptom5"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#available_for"/>
+        <NamedIndividual IRI="#Treatment1"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#available_for"/>
+        <NamedIndividual IRI="#Treatment2"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#available_for"/>
+        <NamedIndividual IRI="#Treatment3"/>
+        <NamedIndividual IRI="#Virus"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#details"/>
+        <NamedIndividual IRI="#Detail1"/>
+        <Literal>Large family virus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#details"/>
+        <NamedIndividual IRI="#Detail2"/>
+        <Literal>May cause illness in animals and humans</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#details"/>
+        <NamedIndividual IRI="#Detail3"/>
+        <Literal>common cold to sever diseases</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#details"/>
+        <NamedIndividual IRI="#Detail4"/>
+        <Literal>Covid-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#details"/>
+        <NamedIndividual IRI="#Method1"/>
+        <Literal>From others who have virus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#details"/>
+        <NamedIndividual IRI="#Method2"/>
+        <Literal>Person to person</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#details"/>
+        <NamedIndividual IRI="#Method3"/>
+        <Literal>Small droplets from nose or mouth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#details"/>
+        <NamedIndividual IRI="#Method4"/>
+        <Literal>When cough, sneezes or speaks</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#behaviour"/>
+        <NamedIndividual IRI="#Precaution1"/>
+        <Literal>Maintain 1-3 m distance from others</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#behaviour"/>
+        <NamedIndividual IRI="#Precaution2"/>
+        <Literal>Good hand and respiratory hygiene</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#behaviour"/>
+        <NamedIndividual IRI="#Precaution3"/>
+        <Literal>Avoid going in crowded areas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#behaviour"/>
+        <NamedIndividual IRI="#Precaution4"/>
+        <Literal>Avoid touching eyes, nose and mouth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#behaviour"/>
+        <NamedIndividual IRI="#Symptom1"/>
+        <Literal>Fever</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#behaviour"/>
+        <NamedIndividual IRI="#Symptom2"/>
+        <Literal>Dry cough</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#behaviour"/>
+        <NamedIndividual IRI="#Symptom3"/>
+        <Literal>Tiredness</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#behaviour"/>
+        <NamedIndividual IRI="#Symptom4"/>
+        <Literal>Aches and pains</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#behaviour"/>
+        <NamedIndividual IRI="#Symptom5"/>
+        <Literal>Nasal congestion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Treatment1"/>
+        <Literal>Supportive Intensive care</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Treatment2"/>
+        <Literal>Drug therapy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Treatment3"/>
+        <Literal>Mechanical Ventilation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Virus"/>
+        <Literal>Corona</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#available_for"/>
+        <Class IRI="#Virus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#for"/>
+        <Class IRI="#Virus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#of"/>
+        <Class IRI="#Virus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#of_spreading"/>
+        <Class IRI="#Virus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shows_by"/>
+        <Class IRI="#Virus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Virus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#available_for"/>
+        <Class IRI="#Treatments"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#for"/>
+        <Class IRI="#Precautions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#of"/>
+        <Class IRI="#Details"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#of_spreading"/>
+        <Class IRI="#Method"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#shows_by"/>
+        <Class IRI="#Symptoms"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#behaviour"/>
+        <Class IRI="#Symptoms"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#details"/>
+        <Class IRI="#Precautions"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Virus"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#treatment_name"/>
+        <Class IRI="#Treatments"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#behaviour"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#details"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#treatment_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,115 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>edu.stanford.swrl</groupId>
+    <artifactId>swrlapi-parent</artifactId>
+    <version>2.0.8</version>
+  </parent>
+
+  <groupId>edu.stanford.swrl</groupId>
+  <artifactId>swrlapi-example</artifactId>
+  <version>2.0.8</version>
+  <packaging>jar</packaging>
+
+  <name>SWRLAPI Example</name>
+  <description>Minimal SWRLAPI-based project</description>
+
+  <properties>
+
+    <swrlapi.version>2.0.8</swrlapi.version>
+    <swrlapi.drools.version>2.0.8</swrlapi.drools.version>
+
+  </properties>
+
+  <scm>
+    <connection>scm:git:git@github.com:protegeproject/swrlapi-example.git</connection>
+    <developerConnection>scm:git:git@github.com:protegeproject/swrlapi-example.git</developerConnection>
+    <url>https://github.com/protegeproject/swrlapi-example</url>
+    <tag>release-2.0.8</tag>
+  </scm>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>edu.stanford.swrl</groupId>
+      <artifactId>swrlapi</artifactId>
+      <version>${swrlapi.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>edu.stanford.swrl</groupId>
+      <artifactId>swrlapi-drools-engine</artifactId>
+      <version>${swrlapi.drools.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>net.sourceforge.owlapi</groupId>
+      <artifactId>owlapi-osgidistribution</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+
+    <plugins>
+
+      <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-assembly-plugin</artifactId>
+	<configuration>
+	  <archive> 
+	    <manifest>
+	      <mainClass>org.swrlapi.example.SWRLAPIExample</mainClass>
+	    </manifest>
+	  </archive>
+	  <descriptorRefs>
+	    <descriptorRef>jar-with-dependencies</descriptorRef>
+	  </descriptorRefs>
+	</configuration>
+	<executions>
+	  <execution>
+	    <id>make-assembly</id>
+	    <phase>package</phase>
+	    <goals>
+              <goal>single</goal>
+	    </goals>
+	  </execution>
+	</executions>
+      </plugin>
+
+      <plugin>
+	<groupId>org.codehaus.mojo</groupId>
+	<artifactId>exec-maven-plugin</artifactId>
+	<executions>
+	  <execution>
+	    <goals>
+	      <goal>java</goal>
+	    </goals>
+	  </execution>
+	</executions>
+	<configuration>
+	  <mainClass>org.swrlapi.example.SWRLAPIExample</mainClass>
+	</configuration>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+</project>

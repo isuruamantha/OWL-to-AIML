@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://coronavirus.rdf#"
+     xml:base="http://coronavirus.rdf"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:coronavirus="http://coronavirus.rdf#">
+    <owl:Ontology rdf:about="http://coronavirus.rdf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://coronavirus.rdf#available_for -->
+
+    <owl:ObjectProperty rdf:about="http://coronavirus.rdf#available_for">
+        <rdfs:domain rdf:resource="http://coronavirus.rdf#Virus"/>
+        <rdfs:range rdf:resource="http://coronavirus.rdf#Treatments"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://coronavirus.rdf#for -->
+
+    <owl:ObjectProperty rdf:about="http://coronavirus.rdf#for">
+        <rdfs:domain rdf:resource="http://coronavirus.rdf#Virus"/>
+        <rdfs:range rdf:resource="http://coronavirus.rdf#Precautions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://coronavirus.rdf#of -->
+
+    <owl:ObjectProperty rdf:about="http://coronavirus.rdf#of">
+        <rdfs:domain rdf:resource="http://coronavirus.rdf#Virus"/>
+        <rdfs:range rdf:resource="http://coronavirus.rdf#Details"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://coronavirus.rdf#of_spreading -->
+
+    <owl:ObjectProperty rdf:about="http://coronavirus.rdf#of_spreading">
+        <rdfs:domain rdf:resource="http://coronavirus.rdf#Virus"/>
+        <rdfs:range rdf:resource="http://coronavirus.rdf#Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://coronavirus.rdf#shows_by -->
+
+    <owl:ObjectProperty rdf:about="http://coronavirus.rdf#shows_by">
+        <rdfs:domain rdf:resource="http://coronavirus.rdf#Virus"/>
+        <rdfs:range rdf:resource="http://coronavirus.rdf#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://coronavirus.rdf#Virus"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://coronavirus.rdf#behaviour -->
+
+    <owl:DatatypeProperty rdf:about="http://coronavirus.rdf#behaviour">
+        <rdfs:domain rdf:resource="http://coronavirus.rdf#Symptoms"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://coronavirus.rdf#details -->
+
+    <owl:DatatypeProperty rdf:about="http://coronavirus.rdf#details">
+        <rdfs:domain rdf:resource="http://coronavirus.rdf#Precautions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://coronavirus.rdf#name -->
+
+    <owl:DatatypeProperty rdf:about="http://coronavirus.rdf#name">
+        <rdfs:domain rdf:resource="http://coronavirus.rdf#Virus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://coronavirus.rdf#treatment_name -->
+
+    <owl:DatatypeProperty rdf:about="http://coronavirus.rdf#treatment_name">
+        <rdfs:domain rdf:resource="http://coronavirus.rdf#Treatments"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://coronavirus.rdf#Details -->
+
+    <owl:Class rdf:about="http://coronavirus.rdf#Details"/>
+    
+
+
+    <!-- http://coronavirus.rdf#Method -->
+
+    <owl:Class rdf:about="http://coronavirus.rdf#Method"/>
+    
+
+
+    <!-- http://coronavirus.rdf#Precautions -->
+
+    <owl:Class rdf:about="http://coronavirus.rdf#Precautions"/>
+    
+
+
+    <!-- http://coronavirus.rdf#Symptoms -->
+
+    <owl:Class rdf:about="http://coronavirus.rdf#Symptoms"/>
+    
+
+
+    <!-- http://coronavirus.rdf#Treatments -->
+
+    <owl:Class rdf:about="http://coronavirus.rdf#Treatments"/>
+    
+
+
+    <!-- http://coronavirus.rdf#Virus -->
+
+    <owl:Class rdf:about="http://coronavirus.rdf#Virus"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://coronavirus.rdf#Detail1 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Detail1">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Details"/>
+        <of rdf:resource="http://coronavirus.rdf#Virus"/>
+        <details rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Large family virus</details>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Detail2 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Detail2">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Details"/>
+        <of rdf:resource="http://coronavirus.rdf#Virus"/>
+        <details rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May cause illness in animals and humans</details>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Detail3 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Detail3">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Details"/>
+        <of rdf:resource="http://coronavirus.rdf#Virus"/>
+        <details rdf:datatype="http://www.w3.org/2001/XMLSchema#string">common cold to sever diseases</details>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Detail4 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Detail4">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Details"/>
+        <of rdf:resource="http://coronavirus.rdf#Virus"/>
+        <details rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covid-19</details>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Method1 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Method1">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Method"/>
+        <of_spreading rdf:resource="http://coronavirus.rdf#Virus"/>
+        <details rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From others who have virus</details>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Method2 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Method2">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Method"/>
+        <of_spreading rdf:resource="http://coronavirus.rdf#Virus"/>
+        <details rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person to person</details>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Method3 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Method3">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Method"/>
+        <of_spreading rdf:resource="http://coronavirus.rdf#Virus"/>
+        <details rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Small droplets from nose or mouth</details>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Method4 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Method4">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Method"/>
+        <of_spreading rdf:resource="http://coronavirus.rdf#Virus"/>
+        <details rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When cough, sneezes or speaks</details>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Precaution1 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Precaution1">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Precautions"/>
+        <for rdf:resource="http://coronavirus.rdf#Virus"/>
+        <behaviour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maintain 1-3 m distance from others</behaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Precaution2 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Precaution2">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Precautions"/>
+        <for rdf:resource="http://coronavirus.rdf#Virus"/>
+        <behaviour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Good hand and respiratory hygiene</behaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Precaution3 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Precaution3">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Precautions"/>
+        <for rdf:resource="http://coronavirus.rdf#Virus"/>
+        <behaviour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avoid going in crowded areas</behaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Precaution4 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Precaution4">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Precautions"/>
+        <for rdf:resource="http://coronavirus.rdf#Virus"/>
+        <behaviour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avoid touching eyes, nose and mouth</behaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Symptom1 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Symptom1">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Symptoms"/>
+        <shows_by rdf:resource="http://coronavirus.rdf#Virus"/>
+        <behaviour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fever</behaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Symptom2 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Symptom2">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Symptoms"/>
+        <shows_by rdf:resource="http://coronavirus.rdf#Virus"/>
+        <behaviour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dry cough</behaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Symptom3 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Symptom3">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Symptoms"/>
+        <shows_by rdf:resource="http://coronavirus.rdf#Virus"/>
+        <behaviour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiredness</behaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Symptom4 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Symptom4">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Symptoms"/>
+        <shows_by rdf:resource="http://coronavirus.rdf#Virus"/>
+        <behaviour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aches and pains</behaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Symptom5 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Symptom5">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Symptoms"/>
+        <shows_by rdf:resource="http://coronavirus.rdf#Virus"/>
+        <behaviour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nasal congestion</behaviour>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Treatment1 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Treatment1">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Treatments"/>
+        <available_for rdf:resource="http://coronavirus.rdf#Virus"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supportive Intensive care</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Treatment2 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Treatment2">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Treatments"/>
+        <available_for rdf:resource="http://coronavirus.rdf#Virus"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drug therapy</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Treatment3 -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Treatment3">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Treatments"/>
+        <available_for rdf:resource="http://coronavirus.rdf#Virus"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanical Ventilation</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://coronavirus.rdf#Virus -->
+
+    <owl:NamedIndividual rdf:about="http://coronavirus.rdf#Virus">
+        <rdf:type rdf:resource="http://coronavirus.rdf#Virus"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corona</name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
